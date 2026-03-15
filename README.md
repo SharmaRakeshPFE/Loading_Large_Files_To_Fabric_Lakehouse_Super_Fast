@@ -1,9 +1,8 @@
 # Loading_Large_Files_To_Fabric_Lakehouse_Super_Fast
 
-GitHub Repo Description (short + customer-focused)
-Copy large-scale Parquet datasets from Amazon S3 into Microsoft Fabric Lakehouse (Files) at high speed using Spark + Hadoop S3A.
 This repo demonstrates a production-friendly pattern to bulk-load (lift-and-shift) large volumes of files from an S3 prefix into a Fabric Lakehouse Files folder while preserving the original folder structure (e.g., partition-style directories). The notebook uses Spark’s JVM bridge to call the Hadoop FileSystem API (S3AFileSystem) for efficient recursive listing and byte-for-byte copy, making it suitable for many files and large files during migrations, backfills, or initial lake onboarding.
-What this repo showcases
+
+# What this repo showcases
 
 High-volume ingestion from S3 → OneLake/Lakehouse Files using s3a:// paths and Hadoop FS copy utilities
 Recursive copy across a prefix (listFiles(..., recursive=True)) with folder structure preserved
