@@ -13,7 +13,7 @@ A reusable foundation for post-copy validation and downstream processing (e.g., 
 
 This solution is designed to efficiently move very large volumes of Parquet files from Amazon S3 into Microsoft Fabric Lakehouse Files. Performance is achieved by combining parallelism, optimized S3A configurations, and filesystem‑level copy semantics instead of row‑by‑row ingestion.
 
-1️⃣ Hadoop S3A Connector (Core Enabler)
+1️⃣ # Hadoop S3A Connector (Core Enabler)
 The solution uses the Hadoop S3A filesystem (s3a://), which enables:
 
 Parallel reads from S3
